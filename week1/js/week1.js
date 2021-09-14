@@ -1,10 +1,10 @@
 function loadHint(){
-    var HintName = document.getElementById("name_input").value
+    var HintName = document.getElementById("username_input").value
     var HintHTML = localStorage.getItem(HintName)
     document.getElementById("Hint_editor").value = HintHTML
     }
 function saveHint(){
-    var HintName = document.getElementById("name_input").value
+    var HintName = document.getElementById("username_input").value
     var HintHTML = document.getElementById("Hint_editor").value
     localStorage.setItem(HintName, HintHTML)
     }
