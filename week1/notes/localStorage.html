@@ -38,12 +38,16 @@
  </section>
  <textarea id="story_editor" placeholder="Write a totally awesome story here."></textarea>
  <section id="story_display"></section>
-
+<p>I fixed a typo in the book example. The function was named dsiplayStory instead of displayStory.</p>
 <p>My version of the story editor is for passwords. 
-    It has javascript and css in separate files, and stores password hints based on the site the user types.
+    It has javascript in a separate file, and stores password hints based on the site the user types.
     Originally I was going to place the passwords directly into localStorage, but then I read this article about why that is a terrible idea. 
     <a href="https://dev.to/rdegges/please-stop-using-local-storage-1i04">https://dev.to/rdegges/please-stop-using-local-storage-1i04</a>
 That's why I decided to change it so that it just stores password clues/hints and not the actual password.</p>
+<p>While trying to set this up, I realized that the two are overwriting each other. I'm not sure why. I figured it out. The javascript is searching
+    for the match based on what the story name or username is. Since I made a username called 'bob' and there's a story called 'bob', the newest 'bob' overwrites the other.
+    To solve this I am going to add '-hint' to all the hint names.
+</p>
  <h1>Password Hints</h1>
  Username:<input id="username_input"></input>
  <section>
@@ -58,4 +62,7 @@ That's why I decided to change it so that it just stores password clues/hints an
  </body>
  </html>
 
- <!-- code source: https://github.com/yenrab/doing_more_with_web_things -->
+ <!-- code source: https://github.com/yenrab/doing_more_with_web_things 
+https://www.w3schools.com/html/html_links.asp
+https://dev.to/rdegges/please-stop-using-local-storage-1i04
+-->
