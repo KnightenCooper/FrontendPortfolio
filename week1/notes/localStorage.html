@@ -44,10 +44,15 @@
     Originally I was going to place the passwords directly into localStorage, but then I read this article about why that is a terrible idea. 
     <a href="https://dev.to/rdegges/please-stop-using-local-storage-1i04">https://dev.to/rdegges/please-stop-using-local-storage-1i04</a>
 That's why I decided to change it so that it just stores password clues/hints and not the actual password.</p>
-<p>While trying to set this up, I realized that the two are overwriting each other. I'm not sure why. I figured it out. The javascript is searching
+<p>While trying to set this up, I realized that the two are overwriting each other. I'm not sure why.</p>
+<p>Great news! I figured it out. The javascript is searching
     for the match based on what the story name or username is. Since I made a username called 'bob' and there's a story called 'bob', the newest 'bob' overwrites the other.
-    To solve this I am going to add '-hint' to all the hint names.
+    To solve this I am going to add '-hint' to all the hint names. I had to change the location of '-hint' because I placed it onto the identifier instead of 
+    being added to the actual username value. Everything is working now.
 </p>
+<p>If I have time, I want to try to add a button that records the last time you pressed the button and displays it, or something that could use
+    localStorage for recent/most common searches. I think both of those could be interesting to make, but I still need to do the mobile UX prepwork. I 
+    don't think I have time to do more with localStorage, but we'll see.</p>
  <h1>Password Hints</h1>
  Username:<input id="username_input"></input>
  <section>
@@ -57,6 +62,7 @@ That's why I decided to change it so that it just stores password clues/hints an
  </section>
  <textarea id="Hint_editor" placeholder="Write the hint here."></textarea>
  <section id="Hint_display"></section>
+
  <script src="../js/week1.js">
  </script>
  </body>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 330 portfolio</title>
+    <link rel="stylesheet" href="week1.css" />
+  </head>
+  <body>
+    <h1>WDD 330 portfolio</h1>
+    <h2>Mobile UX</h2>
+    <ul>
+      <li>
+          <h3>Notes:</h3>
+        <p>Design for mobile first because more and more people are using mobile and it's easier to port to desktop from mobile. 
+            Mobile sites should be useful, load fast, have minimal steps, and be based on one thumb reachability. Loading times can 
+            be shortened by using less images, use svg/webfonts, optimize css/js files, and GZIP files. Place most commonly tapped 
+            items at bottom of phone screen, and use the word 'menu' with a border instead of a hamburger button. People don't know 
+            hamburger = menu. </p>
+        <p>When designing mobile forms have the labels be displayed in the field and float up and smaller when tapped. Mobile forms 
+            should give users option for email or phone, autocomplete, don't automatically mask/hide passwords, have mask password option, 
+            a single credit card field that automatically advances, and the correct keyboard for the input. Mobile sites should link phone 
+            numbers so people can click to call.</p>
+        <p>When using ads on mobile ads don't use pop-ups, massive ads, keep ads small, and have ads expand when clicked. </p>
+        <h3>Examples:</h3>
+        <p>Linked phone number(Good): <a href="tel:417-522-4499">417-522-4499</a></p>
+        <p>Static phone number(Bad): 417-522-4499</p>
+        <p>Note: This phone number is real and will call a Domino's Pizza in Missouri.</p>
+        <p>The next example is located at the bottom of the screen and is the bottom navigation bar that incorporates the optimal menu icon and is 
+            positioned to be easiest to use for the right thumb. A user that is scrolling throught their phone with their right hand will be able 
+            to quickly tap the menu button using their thumb because of its position.</p>
+
+      </li>
+    </ul>
+    <section class="ad">
+        <p>- This is the ideal size and position for an ad.</p>
+        <p>- Ads should be in the middle of content and be small.</p>
+    </section>
+    <ul>
+        <li>
+            <p>Another interesting thing we can do to make mobile forms better is to disable autocomplete and spellcheck. This wasn't in the video, 
+                but was somthing I discovered while trying to look up how to code the form the way the video suggested. We can disable spell check by adding 
+                input type="text" spellcheck="false". We can turn off autocomplete by using input type="text" autocomplete="off".</p>
+            <h3>Questions:</h3>
+            <p>How can I make a form that has labels that start in the field and then get smaller and move out of the way when tapped? </p>
+            <p>How did they make a credit card form that automatically advanced to each new form? </p>
+            <p>The author of the video said to avoid images and anything that will slow down the site, but then advised using video ads because they work better.
+                Are the benefits of video ads worth having a site that loads slower? Do video ads not slow down the site as much for some reason?
+            </p>
+            <p>The video talked about watches. Are people using watches to surf the internet? How would I design a website for a watch and is that even worth it?</p>
+            <p>How do I optimize css and js files? How do I use GZIP to decrease loading times?</p>
+
+        </li>
+    </ul>
+<br>
+<br>
+
+    <div class="topnav">
+        <a href="#home" class="active">Logo</a>
+        <div id="myLinks">
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>        <p class="menu">MENU</p>
+
+        </a>
+
+
+
+      <script src="../js/week1.js">
+      </script>
+  </body>
+</html>
+ <!-- Code Source: https://matkat99.github.io/wdd330-portfolio-example/week1/ 
+https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number
+https://www.w3schools.com/css/tryit.asp?filename=trycss_boxmodel
+https://www.w3schools.com/css/css_boxmodel.asp
+https://jsfiddle.net/Ljquqtrv/
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_bottom_nav
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar
+https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_html_autocomplete_off2
+https://www.w3schools.com/howto/howto_html_spellcheck_disable.asp
+-->
