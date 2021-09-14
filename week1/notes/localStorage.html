@@ -16,7 +16,6 @@
  function displayStory(){
  var storyHTML = document.getElementById("story_editor").value
  document.getElementById("story_display").innerHTML = storyHTML
- console.log = storyHTML
  }
  </script>
 
@@ -39,6 +38,23 @@
  </section>
  <textarea id="story_editor" placeholder="Write a totally awesome story here."></textarea>
  <section id="story_display"></section>
+
+<p>My version of the story editor is for passwords. 
+    It has javascript and css in separate files, and stores password hints based on the site the user types.
+    Originally I was going to place the passwords directly into localStorage, but then I read this article about why that is a terrible idea. 
+    <a href="https://dev.to/rdegges/please-stop-using-local-storage-1i04">https://dev.to/rdegges/please-stop-using-local-storage-1i04</a>
+That's why I decided to change it so that it just stores password clues/hints and not the actual password.</p>
+ <h1>Password Hints</h1>
+ Username:<input id="name_input"></input>
+ <section>
+ <button onclick="loadHint()">Find and Edit Hint</button>
+ <button onclick="saveHint()">Save Hint</button>
+ <button onclick="displayHint()">Display Hint</button>
+ </section>
+ <textarea id="Hint_editor" placeholder="Write the hint here."></textarea>
+ <section id="Hint_display"></section>
+ <script src="../js/week1.js">
+ </script>
  </body>
  </html>
 
