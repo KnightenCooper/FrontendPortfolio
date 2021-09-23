@@ -3,7 +3,7 @@
 function hello(){
     console.log('Hello World!');
 }
-console.log("I can call the same function 3 times to get 3 'hello worlds'")
+console.log("I can call the same function 3 times to get 'Hello World!'three times")
 hello();
 hello();
 hello();
