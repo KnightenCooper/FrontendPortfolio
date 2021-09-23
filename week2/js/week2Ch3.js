@@ -1,5 +1,5 @@
 
-// Javascript for ch2 page
+// Javascript for ch3 page
 const avengers = ['Captain America', 'Iron Man', 'Thor', 'Hulk']
 
 let libButton = document.getElementById('lib-button');
