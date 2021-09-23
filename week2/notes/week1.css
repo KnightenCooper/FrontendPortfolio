@@ -1,0 +1,81 @@
+body {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h1 {
+    background-color: antiquewhite;
+    padding: 1em;
+  }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: antiquewhite;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(233, 233, 233);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    
+  }
+  
+  .topnav a {
+    color: black;
+    padding: 18px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    
+  }
+  
+  .topnav a.icon {
+    background: antiquewhite;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100px;
+  }
+
+.menu{
+position: absolute;
+top: 0;
+border: 2px solid black;
+padding: 4px 19px 2px ;
+
+}
+
+  .topnav a:hover {
+    background-color: antiquewhite;
+    color: black;
+    
+  }
+  .active {
+    background-color:   rgb(245, 245, 245);
+
+    color: white;
+  }
+
+  .ad{
+      background-color: lightcyan;
+      width: 100%;
+
+  }
