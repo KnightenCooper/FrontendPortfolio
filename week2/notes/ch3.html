@@ -4,85 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WDD 330 portfolio</title>
-    <link rel="stylesheet" href="week1.css" />
+    <link rel="stylesheet" href="../../styles.css" />
   </head>
   <body>
     <h1>WDD 330 portfolio</h1>
-    <h2>Mobile UX</h2>
+    <h2>Chapter 3 Notes from "JavaScript: Novice to Ninja, 2nd Edition"</h2>
     <ul>
       <li>
-          <h3>Notes:</h3>
-        <p>Design for mobile first because more and more people are using mobile and it's easier to port to desktop from mobile. 
-            Mobile sites should be useful, load fast, have minimal steps, and be based on one thumb reachability. Loading times can 
-            be shortened by using less images, use svg/webfonts, optimize css/js files, and GZIP files. Place most commonly tapped 
-            items at bottom of phone screen, and use the word 'menu' with a border instead of a hamburger button. People don't know 
-            hamburger = menu. </p>
-        <p>When designing mobile forms have the labels be displayed in the field and float up and smaller when tapped. Mobile forms 
-            should give users option for email or phone, autocomplete, don't automatically mask/hide passwords, have mask password option, 
-            a single credit card field that automatically advances, and the correct keyboard for the input. Mobile sites should link phone 
-            numbers so people can click to call.</p>
-        <p>When using ads on mobile ads don't use pop-ups, massive ads, keep ads small, and have ads expand when clicked. </p>
-        <h3>Examples:</h3>
-        <p>Linked phone number(Good): <a href="tel:417-522-4499">417-522-4499</a></p>
-        <p>Static phone number(Bad): 417-522-4499</p>
-        <p>Note: This phone number is real and will call a Domino's Pizza in Missouri.</p>
-        <p>The next example is located at the bottom of the screen and is the bottom navigation bar that incorporates the optimal menu icon and is 
-            positioned to be easiest to use for the right thumb. A user that is scrolling throught their phone with their right hand will be able 
-            to quickly tap the menu button using their thumb because of its position. </p>
-        <p>Note: the bottom right "MENU" icon is an interactive button that can be tapped to open and close the menu if you'd like to see a working example.
-        </p>
+          <h3>Javascript Programming Basics</h3>
 
+          <h3>Array: ['Captain America', 'Iron Man', 'Thor', 'Hulk']</h3>
+     
+          <ul>
+            <li>Index: <input type="number" id="number"></li>
+            <li>String to add to Array: <input type="text" id="addString"></li>
+            <li>Remove this index of Array: <input type="number" id="removeIndex"></li>
+          </ul>
+           
+          <button id="lib-button">Generate</button>
+            
+          <p>Generated story: 
+            <span id="story"></span>
+            <span id="story2"></span>
+          </p>
+
+          <h3>I just realized how much easier it will be to use the console, instead of sending everything to display onto this html webpage. 
+            Please use Inspect to view the programming examples I did using the console. Thanks!</h3>
+  
+
+
+
+        <h3>
+            Notes:
+        </h3>
+        <p>Arrays are an ordered list of values</p>
+
+        <p>Multidimensional arrays are arrays that contain other arrays</p>
+        
+        <p>Arrays have lots of methods that can be used to manipulate items in the array</p>
+        
+        <p>Sets are new in ES6 and are ordered lists of non-duplicate values</p>
+        
+        <p>Maps are new in ES6 and are ordered lists of key-value pairs</p>
+        
+        <p>We can use an if and else statement to control the flow of code</p>
+        
+        <p>The switch statement can be used instead of multiple if and else statements</p>
+        
+        <p>A while loop and do ... while loop can be used to repeat a block of code while a condition is still true</p>
+        
+        <p>A for loop works in a similar way to a while loop, but has a different syntax</p>
+        
+        <p>A for-of loop can be used to iterate over an array</p>
+        
+        <p>Sets and maps are enumerable, so can also be looped over using a for-of loop</p>
+
+        <h3>Questions About Chapter Three:</h3>
+        <ol>
+            <li>
+                None so far.
+            </li>
+  
+        </ol>
       </li>
     </ul>
-    <section class="ad">
-        <p>- This is the ideal size and position for an ad.</p>
-        <p>- Ads should be in the middle of content and be small.</p>
-    </section>
-    <ul>
-        <li>
-            <p>Another interesting thing we can do to make mobile forms better is to disable autocomplete and spellcheck. This wasn't in the video, 
-                but was somthing I discovered while trying to look up how to code the form the way the video suggested. We can disable spell check by adding 
-                input type="text" spellcheck="false". We can turn off autocomplete by using input type="text" autocomplete="off".</p>
-            <h3>Questions:</h3>
-            <p>How can I make a form that has labels that start in the field and then get smaller and move out of the way when tapped? </p>
-            <p>How did they make a credit card form that automatically advanced to each new form? </p>
-            <p>The author of the video said to avoid images and anything that will slow down the site, but then advised using video ads because they work better.
-                Are the benefits of video ads worth having a site that loads slower? Do video ads not slow down the site as much for some reason?
-            </p>
-            <p>The video talked about watches. Are people using watches to surf the internet? How would I design a website for a watch and is that even worth it?</p>
-            <p>How do I optimize css and js files? How do I use GZIP to decrease loading times?</p>
 
-        </li>
-    </ul>
-<br>
-<br>
+    <script src="../js/week2Ch3.js">
+    </script>
 
-    <div class="topnav">
-        <a href="#home" class="active">Logo</a>
-        <div id="myLinks">
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>        <p class="menu">MENU</p>
-
-        </a>
-
-
-
-      <script src="../js/week1.js">
-      </script>
   </body>
 </html>
- <!-- Code Source: https://matkat99.github.io/wdd330-portfolio-example/week1/ 
-https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number
-https://www.w3schools.com/css/tryit.asp?filename=trycss_boxmodel
-https://www.w3schools.com/css/css_boxmodel.asp
-https://jsfiddle.net/Ljquqtrv/
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_bottom_nav
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar
-https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_html_autocomplete_off2
-https://www.w3schools.com/howto/howto_html_spellcheck_disable.asp
--->
+ <!-- Code Sources: 
+ https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/2
+ https://www.dummies.com/web-design-development/javascript/how-to-prompt-the-user-for-input-in-javascript/
+ https://www.w3schools.com/jsref/prop_text_value.asp
+ https://www.khanacademy.org/computing/computer-programming/html-css-js/html-js-dom-events/pc/challenge-mad-libs
+ https://www.codegrepper.com/code-examples/javascript/how+to+take+input+from+console+in+javascript
+ https://matkat99.github.io/wdd330-portfolio-example/week1/ -->

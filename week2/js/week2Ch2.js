@@ -25,13 +25,3 @@ libButton.addEventListener('click', libIt);
 // https://www.khanacademy.org/computing/computer-programming/html-css-js/html-js-dom-events/pc/challenge-mad-libs
 // https://www.codegrepper.com/code-examples/javascript/how+to+take+input+from+console+in+javascript
 
-
-// Javascript for mobile UX page
-    function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
