@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 330 portfolio</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <h1>WDD 330 portfolio</h1>
+    <h2>Chapter 7 Notes from "JavaScript: Novice to Ninja, 2nd Edition"</h2>
+    <ul>
+      <li>
+          <h3>Javascript Events Basics</h3>
+          <input type = "button" onclick = "game.start(quiz)" value = "Click this Button to Start Trivia">  
+
+          <section class='dojo'>
+            <div class='quiz-body'>
+              <header>
+                <h1>Quiz Ninja!</h1>
+              </header>
+              <div id='score'>Score: <strong>0</strong></div>
+              <div id='question'></div>
+              <div id='result'></div>
+              <div id='info'></div>
+            </div>
+          </section>
+
+          <h1>The onclick Event</h1>
+
+          <p>The onclick event is used to trigger a function when an element is clicked on.</p>
+          
+          <p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
+          
+          <button onclick="myFunction()">Click me</button>
+
+          <p id="demo"></p>
+
+
+          <p>Click the button to trigger a function that will alert "Hello World!".</p>
+
+
+          <input type = "button" onclick = "helloworld()" value = "Click this Button to Alert 'Hello World'">  
+
+
+          <p ondblclick="myFunction2()">Double-click this paragraph to trigger a function.</p>
+
+        <p id="demo2"></p>
+        <h3>
+            Notes:
+        </h3>
+        <p>Events occur when a user interacts with a web page.</p>
+
+        <p>An event listener is attached to an element, then invokes a callback function when the event occurs.</p>
+        
+        <p>The event object is passed to the callback function as an argument, and contains lots of properties and methods relating to the event.</p>
+        
+        <p>There are many types of event, including mouse events, keyboard events, and touch events.</p>
+        
+        <p>You can remove an event using the removeEventListener method.</p>
+        
+        <p>The default behavior of elements can be prevented using the preventDefault() function.</p>
+        
+        <p>Event propagation is the order the events fire on each element.</p>
+        
+        <p>Event delegation is when an event listener is added to a parent element to capture events that happen to its children elements.</p>
+
+        <h3>Questions About Chapter Seven:</h3>
+        <ol>
+            <li>
+                None so far.
+            </li>
+  
+        </ol>
+      </li>
+    </ul>
+
+    <script src="../js/week2Ch7.js">
+    </script>
+
+  </body>
+</html>
+ <!-- Code Sources: 
+ https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/2
+ https://www.dummies.com/web-design-development/javascript/how-to-prompt-the-user-for-input-in-javascript/
+ https://www.w3schools.com/jsref/prop_text_value.asp
+ https://www.khanacademy.org/computing/computer-programming/html-css-js/html-js-dom-events/pc/challenge-mad-libs
+ https://www.codegrepper.com/code-examples/javascript/how+to+take+input+from+console+in+javascript
+ https://matkat99.github.io/wdd330-portfolio-example/week1/ -->

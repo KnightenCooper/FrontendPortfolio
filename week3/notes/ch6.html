@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 330 portfolio</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <h1>WDD 330 portfolio</h1>
+    <h2>Chapter 6 Notes from "JavaScript: Novice to Ninja, 2nd Edition"</h2>
+    <ul>
+      <li>
+        <h3>Javascript Programming the Document Object Model (DOM)</h3>
+        <h3></h3>
+
+        <h3>Click this button to complete trivia quiz with DOM demo</h3>
+        <input type = "button" onclick = "game.start(quiz)" value = "Click this Button to Start Trivia">  
+
+        <section class='dojo'>
+          <div class='quiz-body'>
+            <header>
+              <h1>Quiz Ninja!</h1>
+            </header>
+            <div id='score'>Score: <strong>0</strong></div>
+            <div id='question'></div>
+            <div id='result'></div>
+            <div id='info'></div>
+          </div>
+        </section>
+      
+
+
+        <h3>
+            Notes:
+        </h3>
+
+        <p>The document Object Model is a way of representing a page of HTML as a tree of nodes.</p>
+
+       <p>The document.getElementById(), document.getElementsByClassName(), document.getElementsByTagNames() and document.querySelector()can be used to access elements on a page.</sp>
+
+       <p>The parentNode(), previousSibling(), nextSibling(), childNodes() and children() methods can be used to navigate around the DOM tree.</p>
+
+       <p>An element’s attributes can be accessed using the getAttribute()method, and updated using the setAttribute() method.</p>
+
+       <p>The createElement() and create TextNode() methods can be used to create dynamic markup on the fly.</p>
+
+       <p>Markup can be added to the page using the appendChild() and insertBefore() methods.</p>
+
+        <p>Elements can be replaced using the replaceChild() method, and removed using the removeChild() method.</p>
+
+        <p>The innerHTML property can be used to insert raw HTML directly into the DOM.</p>
+
+        <p>The CSS properties of an element can be changed by accessing the style property.</p>
+
+        <h3>Questions About Chapter Six:</h3>
+        <ol>
+            <li>
+                None so far.
+            </li>
+  
+        </ol>
+      </li>
+    </ul>
+
+    <script src="../js/week2Ch6.js">
+    </script>
+
+  </body>
+</html>
+ <!-- Code Sources: 
+ https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/2
+ https://www.dummies.com/web-design-development/javascript/how-to-prompt-the-user-for-input-in-javascript/
+ https://www.w3schools.com/jsref/prop_text_value.asp
+ https://www.khanacademy.org/computing/computer-programming/html-css-js/html-js-dom-events/pc/challenge-mad-libs
+ https://www.codegrepper.com/code-examples/javascript/how+to+take+input+from+console+in+javascript
+ https://matkat99.github.io/wdd330-portfolio-example/week1/ -->
