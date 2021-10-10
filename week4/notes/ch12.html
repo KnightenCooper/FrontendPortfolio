@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 330 portfolio</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <h1>WDD 330 portfolio</h1>
+    <h2>Chapter 7 Notes from "JavaScript: Novice to Ninja, 2nd Edition"</h2>
+    <ul>
+      <li>
+          <h3>Javascript Events Basics</h3>
+          <section class='dojo'>
+            <div class='quiz-body'>
+          <header>
+              <h1>Quiz Ninja!</h1>
+              <div id='timer'>Time: <strong>20</strong></div>
+              <div id='score'>Score: <strong>0</strong></div>
+            </header>
+            <div id='question'></div>
+            <div id='response'></div>  
+            <div id='result'></div>
+            <div id='info'></div>
+            <button id='start'>Click to Start</button>
+            </div>
+          </section>
+        <h3>
+            Notes:
+        </h3>
+       
+        <p>Object-oriented programming (OOP) is a way of programming that uses objects that encapsulate their own properties and methods.</p>
+
+        <p>The main concepts of OOP are encapsulation, polymorphism and inheritance.</p>
+        
+        <p>Constructor functions can be used to create instances of objects.</p>
+        
+        <p>ES6 introduced class declarations that use the class keyword. These can be used in place of constructor functions.</p>
+        
+        <p>Inside a constructor function or class declaration, the keyword this refers to the object returned by the function.</p>
+        
+        <p>All instances of a class or constructor function inherit all the properties and methods of its prototype.</p>
+        
+        <p>The prototype is live, so new properties and methods can be added to existing instances.</p>
+        
+        <p>The prototype chain is used to find an available method. If an object lacks a method, JavaScript will check whether its prototype has the method. If not, it will check that function’s prototype until it finds the method or reaches the Object constructor function.</p>
+        
+        <p>Private properties and methods can be created by defining variables using const and defining a function inside a constructor function. These can be made public using getter and setter functions.</p>
+        
+        <p>Monkey-patching is the process of adding methods to built-in objects by augmenting their prototypes. This should be done with caution as it can cause unexpected behavior in the way built-in objects work.</p>
+        
+        <p>A mixin method can be used to add properties and methods from other objects without creating an inheritance chain.</p>
+        
+        <p>Methods can be chained together and called in sequence if they return a reference to this.</p>
+        
+        <p>Polymorphism allows objects to override shared methods with a more specific implementation.</p>
+        
+        <p>The value of this is not retained inside nested functions, which can cause errors. This can be worked around by using that = this, using the bind(this) method and using arrow functions.</p>
+        
+        <p>Methods can be borrowed from other objects.</p>
+        
+        <p>Composition over inheritance is a design pattern where objects are composed from 'building-block' objects, rather than inheriting all their properties and methods from a parent class.</p>
+
+
+
+
+
+        <h3>Questions About Chapter 12:</h3>
+        <ol>
+            <li>
+                None so far.
+            </li>
+  
+        </ol>
+      </li>
+    </ul>
+
+    <script src="../js/week4ch12.js">
+    </script>
+
+  </body>
+</html>
+ <!-- Code Sources: 
+ https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/2
+ https://www.dummies.com/web-design-development/javascript/how-to-prompt-the-user-for-input-in-javascript/
+ https://www.w3schools.com/jsref/prop_text_value.asp
+ https://www.khanacademy.org/computing/computer-programming/html-css-js/html-js-dom-events/pc/challenge-mad-libs
+ https://www.codegrepper.com/code-examples/javascript/how+to+take+input+from+console+in+javascript
+ https://matkat99.github.io/wdd330-portfolio-example/week1/ -->
