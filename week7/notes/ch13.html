@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 330 portfolio</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <h1>WDD 330 portfolio</h1>
+    <h2>Chapter 13 Notes from "JavaScript: Novice to Ninja, 2nd Edition"</h2>
+    <ul>
+      <li>
+        <h3>Javascript Debugging Programming Basics</h3>
+        <h3>After completeing the quiz and adding tasks, check the console to see code demos.</h3>
+
+        <section class='dojo'>
+          <div class='quiz-body'>
+        <header>
+            <h1>Quiz Ninja!</h1>
+            <div id='timer'>Time: <strong>20</strong></div>
+            <div id='score'>Score: <strong>0</strong></div>
+          </header>
+          <div id='question'></div>
+          <div id='response'></div>  
+          <div id='result'></div>
+          <div id='info'></div>
+          <button id='start'>Click to Start</button>
+          </div>
+        </section>
+      <br>
+      <br>
+        <h3>Add Tasks</h3>
+      
+        <form id='todo' action='https://jsonplaceholder.typicode.com/todos' method='POST'>
+          <input type='text' name='task'  placeholder='Add Task' autofocus required>
+          <button type='submit'>Add Task</button>
+      </form>
+<br>
+        <h3>
+            Notes:
+        </h3>
+ 
+        <p>Ajax is a technique for sending and receiving data asynchronously in the background.</p>
+
+        <p>The data can be sent in many forms, but it is usually in JSON.</p>
+        
+        <p>Ajax can be used for making partial page updates without having to do a full page reload.</p>
+        
+        <p>Ajax can be used for communicating with external APIs.</p>
+        
+        <p>Ajax requests can be made using the Fetch API.</p>
+        
+        <p>The Response interface allows you to control the response received from a request or to create your own response objects.</p>
+        
+        <p>The Request interface allows you to create a request object that contains information about the request being made, such as the URL and headers.</p>
+        
+        <p>The Headers interface allows you to create HTTP headers that can be added to a request or response object.</p>
+        
+        <p>Requests can retrieve data using a GET request, or send data using a POST request.</p>
+        
+        <p>The FormData interface makes it easier to send data from forms.</p>
+
+        <h3>Questions About Chapter 13:</h3>
+        <ol>
+            <li>
+                None so far.
+            </li>
+  
+        </ol>
+      </li>
+    </ul>
+
+    <script src="../js/week7ch13.js">
+    </script>
+
+  </body>
+</html>
+ <!-- Code Sources: 
+ https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/2
+ https://www.dummies.com/web-design-development/javascript/how-to-prompt-the-user-for-input-in-javascript/
+ https://www.w3schools.com/jsref/prop_text_value.asp
+ https://www.khanacademy.org/computing/computer-programming/html-css-js/html-js-dom-events/pc/challenge-mad-libs
+ https://www.codegrepper.com/code-examples/javascript/how+to+take+input+from+console+in+javascript
+ https://matkat99.github.io/wdd330-portfolio-example/week1/ -->

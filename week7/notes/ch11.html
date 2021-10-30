@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 330 portfolio</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <h1>WDD 330 portfolio</h1>
+    <h2>Chapter 11 Notes from "JavaScript: Novice to Ninja, 2nd Edition"</h2>
+    <ul>
+      <li>
+        <h3>Javascript Debugging Programming Basics</h3>
+        <h3>After completeing the quiz below: Check the console to see code demos</h3>
+
+
+              <section class='dojo'>
+                <div class='quiz-body'>
+                  <header>
+                      <h1>Quiz Ninja!</h1>
+                      <div id='timer'>Time: <strong>20</strong></div>
+                      <div id='score'>Score: <strong>0</strong></div>
+                    </header>
+                    <div id='question'></div>
+                    <form id='response'>
+                      <input name='answer' type='text'>
+                      <button type='submit'>Submit Answer</button>
+                    </form>  <div id='result'></div>
+                    <div id='info'></div>
+                    <button id='start'>Click to Start</button>
+                </div>
+              </section>
+
+
+
+
+        <h3>
+            Notes:
+        </h3>
+ 
+        <p>Functions have built-in properties such as length, but can have custom properties added.</p>
+
+        <p>All functions have call() and apply() methods that can invoke a function with the value of this bound to an object that is provided as an argument.</p>
+        
+        <p>Immediately Invoked Function Expressions or IIFEs are functions that are enclosed in parentheses and immediately followed by double parentheses so they’re invoked. They are useful for namespacing variables and setting default values.</p>
+        
+        <p>Functions are able to dynamically redefine themselves in the body of the function, depending on certain conditions.</p>
+        
+        <p>A recursive function will keep invoking itself until a certain condition is met.</p>
+        
+        <p>A callback is a function that’s provided as an argument to another function.</p>
+        
+        <p>Callbacks are frequently used in asynchronous programming as part of the event loop. This means that a program can continue to run in a single thread while waiting for another task to be completed.</p>
+        
+        <p>Promises can be used instead of callbacks to deal with multiple asynchronous actions in sequence. They also provide a nicer mechanism for handling errors.</p>
+        
+        <p>Functions that return other functions are known as higher-order functions.</p>
+        
+        <p>A closure is the process of keeping a reference to a variable available outside the scope of the function it was originally defined in.</p>
+        
+        <p>A generator is created by placing an asterisk character (*) after the function keyword.</p>
+        
+        <p>A generator function will return an iterator object that provides a next() method, which returns the next value in a sequence that is defined in the generator function.</p>
+        
+        <p>Functional programming involves breaking processes down into steps that can be applied as a series of functions.</p>
+        
+        <p>Pure functions are functions that don't rely on the state of the code they are called from, have no side-effects, and always give the same result when given the same arguments (referential transparency).</p>
+        
+        <p>Currying or partial application is the process of applying one argument at a time to a function. A new function is returned until all the arguments have been used.</p>
+
+        <h3>Questions About Chapter 11:</h3>
+        <ol>
+            <li>
+                None so far.
+            </li>
+  
+        </ol>
+      </li>
+    </ul>
+
+    <script src="../js/week7ch11.js">
+    </script>
+
+  </body>
+</html>
+ <!-- Code Sources: 
+ https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/2
+ https://www.dummies.com/web-design-development/javascript/how-to-prompt-the-user-for-input-in-javascript/
+ https://www.w3schools.com/jsref/prop_text_value.asp
+ https://www.khanacademy.org/computing/computer-programming/html-css-js/html-js-dom-events/pc/challenge-mad-libs
+ https://www.codegrepper.com/code-examples/javascript/how+to+take+input+from+console+in+javascript
+ https://matkat99.github.io/wdd330-portfolio-example/week1/ -->
