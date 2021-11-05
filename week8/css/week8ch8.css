@@ -1,0 +1,80 @@
+.burger1{
+    transform: translate(45px, -45px);
+}
+
+.burger2{
+    transform: translateX(45px);
+    transform: translateY(-30px);
+
+
+}
+
+.burger3{
+    transform: scale(1.5, 0.25);
+
+
+}
+
+.burger4{
+    transform: rotate(10deg) translateX(40px) scale(1.5);
+}
+
+.burger5{
+    transform: skew(15deg, 4deg);
+
+
+}
+
+.burger6{
+    transform: rotate(-10deg);
+
+
+}
+
+.burger7{
+    position: relative;
+    top: 200px;
+    left: 200px;
+}
+
+.burger8{
+    transform: rotate(180deg) translateX(-10px) scale(.5);
+
+
+}
+
+.burger9{
+    transform: rotate(-150deg) translateY(40px) scale(1.5);
+
+
+
+}
+
+.burger10{
+    transform: rotate(200deg) translateX(40px) scale(.1);
+
+}
+
+.ad-ad3 :after {
+    content: '';
+    width: 90px;
+    height: 92px;
+    background-image: url(../images/bike_sprite.png);
+    display: block;
+    margin: auto;
+    -webkit-animation: bike steps(4, start) infinite 0.4s, move linear infinite 8s;
+    -webkit-animation-play-state: paused; }
+  .ad-ad3 :after {
+    -webkit-animation-play-state: running; }
+
+
+@-webkit-keyframes bike {
+0% {
+  background-position: 0 0; }
+100% {
+  background-position: -360px 0; } }
+@-webkit-keyframes move {
+0% {
+  -webkit-transform: translatex(-100px); }
+100% {
+  -webkit-transform: translatex(100px); } }

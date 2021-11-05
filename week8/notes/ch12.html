@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 330 portfolio</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../css/week8ch12.css" />
+</head>
+
+<body>
+  <h1>WDD 330 portfolio</h1>
+  <h2>Chapter 12 Notes from "HTML5 & CSS3 FOR THE REAL WORLD: 2ND EDITION"</h2>
+  <ul>
+    <li>
+      <h3>Canvas, SVG, and Drag and Drop</h3>
+
+
+      <canvas id="myCanvas" class="myCanvas" width="200" height="200">
+        Sorry! Your browser doesn’t support Canvas.
+      </canvas>
+
+      <canvas id="myCanvas2" class="myCanvas2" width="200" height="200">
+        Sorry! Your browser doesn’t support Canvas.
+      </canvas>
+
+      <canvas id="myCanvas3" class="myCanvas3" width="200" height="200">
+        Sorry! Your browser doesn’t support Canvas.
+      </canvas>
+
+      <h2>Demo 6: Drawing an image to the canvas</h2>
+      <canvas width="200" height="200" id="demo6" class="myCanvas">
+          Sorry! Your browser doesn't support Canvas.
+      </canvas>
+      
+      <img id="myImageElem" src="../images/burger_small.jpg" alt="burger">
+
+      <br>
+
+      <article id="ac3">
+        <h1>Click and Drag to Feed the Cat</h1>
+        <h2 id="catHeading">The cat says:</h2>
+  
+        <img src="../images/cat.png" id="cat" alt="WAI-ARIA Cat">
+        <div class="content">
+          <p id="mouseContainer" class="mc">
+            <img src="../images/computer-mouse-pic.png" alt="computer mouse" id="mouse1" draggable="true">
+            <img src="../images/computer-mouse-pic.png" alt="computer mouse" id="mouse2" draggable="true">
+            <img src="../images/computer-mouse-pic.png" alt="computer mouse" id="mouse3" draggable="true">
+          </p>
+          <p>Click and Drag the mice into the cat's mouth to feed the cat.</p>
+         
+        </div>
+      </article>
+
+      <h3>
+        Notes:
+      </h3>
+
+      <p>The Canvas API can be used to draw anything using JavaScript</p>
+
+      <p>SVG, Scalable Vector Graphics, are files that let the user infinitely scale them.</p>
+
+      <p>This means that you can make SVGs are big or small as you want with no pixelation.</p>
+
+      <p>You can also make images that can be clicked and dragged as show in the cat example.</p>
+      <h3>Questions About Chapter 12:</h3>
+      <ol>
+        <li>
+          None so far.
+        </li>
+
+      </ol>
+    </li>
+  </ul>
+  <script src="../js/ch12.js">
+  </script>
+</body>
+
+</html>
+<!-- Code Sources: 
+ https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/2
+ https://www.dummies.com/web-design-development/javascript/how-to-prompt-the-user-for-input-in-javascript/
+ https://www.w3schools.com/jsref/prop_text_value.asp
+ https://www.khanacademy.org/computing/computer-programming/html-css-js/html-js-dom-events/pc/challenge-mad-libs
+ https://www.codegrepper.com/code-examples/javascript/how+to+take+input+from+console+in+javascript
+ https://matkat99.github.io/wdd330-portfolio-example/week1/ -->

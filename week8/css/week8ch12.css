@@ -1,0 +1,15 @@
+.myCanvas {
+  border: dotted 2px black;
+}
+
+.myCanvas2 {
+  border: dotted 2px blue;
+}
+
+.myCanvas3 {
+  border: dotted 2px gold;
+}
+
+.draganddrop .mc {
+  text-align: center; 
+}
