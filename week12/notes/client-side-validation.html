@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 330 portfolio</title>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../css/client-validation.css" />
+  </head>
+  <body>
+    <h1>WDD 330 portfolio</h1>
+    <h2>Week 10 Notes from MDN: client-side-validation</h2>
+
+    <section class='dojo'>
+      <div class='quiz-body'>
+      <header>
+        <form>
+          <label for="choose">Would you prefer a banana or cherry?</label>
+          <input id="choose" name="i_like">
+          <button>Submit</button>
+        </form>
+
+
+        
+        <form>
+          <p>
+            <fieldset>
+              <legend>Do you have a driver's license?<abbr title="This field is mandatory" aria-label="required">*</abbr></legend>
+              <!-- While only one radio button in a same-named group can be selected at a time,
+                   and therefore only one radio button in a same-named group having the "required"
+                   attribute suffices in making a selection a requirement -->
+              <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Yes</label>
+              <input type="radio" required name="driver" id="r2" value="no"><label for="r2">No</label>
+            </fieldset>
+          </p>
+          <p>
+            <label for="n1">How old are you?</label>
+            <!-- The pattern attribute can act as a fallback for browsers which
+                 don't implement the number input type but support the pattern attribute.
+                 Please note that browsers that support the pattern attribute will make it
+                 fail silently when used with a number field.
+                 Its usage here acts only as a fallback -->
+            <input type="number" min="12" max="120" step="1" id="n1" name="age"
+                   pattern="\d+">
+          </p>
+          <p>
+            <label for="t1">What's your favorite fruit?<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+            <input type="text" id="t1" name="fruit" list="l1" required
+                   pattern="[Bb]anana|[Cc]herry|[Aa]pple|[Ss]trawberry|[Ll]emon|[Oo]range">
+            <datalist id="l1">
+              <option>Banana</option>
+              <option>Cherry</option>
+              <option>Apple</option>
+              <option>Strawberry</option>
+              <option>Lemon</option>
+              <option>Orange</option>
+            </datalist>
+          </p>
+          <p>
+            <label for="t2">What's your e-mail address?</label>
+            <input type="email" id="t2" name="email">
+          </p>
+          <p>
+            <label for="t3">Leave a short message</label>
+            <textarea id="t3" name="msg" maxlength="140" rows="5"></textarea>
+          </p>
+          <p>
+            <button>Submit</button>
+          </p>
+        </form>
+
+
+        <h3>
+            Notes:
+        </h3>
+ 
+        <p>Client side validation is when the website prevents a user from inputting something that is in the wrong format.</p>
+
+        <p>Form validation can prevent users from submitting passwords that are too short or too long.</p>
+        
+        <p>It can also be used to ensure that user's input a valid e-mail address or phone number.</p>
+        
+        <p>We can do client-side validation with a custom JavaScript set up or by using the built-in HTML5 form validation.</p>
+        
+        <p>We can constrain the length of user inputs and contrain the values of user inputs.</p>
+        
+        <p>Client-side form validation sometimes requires JavaScript if we want to customize styling and error messages, but it always requires 
+          we to think carefully about the user. Always remember to help our users correct the data they provide. </p> 
+          
+        <p>We need to make sure we:</p>
+
+        <p>Display explicit error messages.</p>
+
+        <p>Be permissive about the input format.</p>
+
+        <p>Point out exactly where the error occurs, especially on large forms.</p>
+
+        <p>Once we have checked that the form is filled out correctly, the form can be submitted. </p>
+
+        <h3>Questions About MDN: client-side-validation:</h3>
+        <ol>
+            <li>
+                None so far.
+            </li>
+  
+        </ol>
+      </li>
+    </ul>
+
+  </body>
+</html>
+ <!-- Code Sources: 
+  https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
+  https://unsplash.com/photos/sc5sTPMrVfk
+  https://www.sitepoint.com/premium/books/html5-css3-for-the-real-world-2nd-edition/read/8
+ https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/2
+ https://www.dummies.com/web-design-development/javascript/how-to-prompt-the-user-for-input-in-javascript/
+ https://www.w3schools.com/jsref/prop_text_value.asp
+ https://www.khanacademy.org/computing/computer-programming/html-css-js/html-js-dom-events/pc/challenge-mad-libs
+ https://www.codegrepper.com/code-examples/javascript/how+to+take+input+from+console+in+javascript
+ https://matkat99.github.io/wdd330-portfolio-example/week1/ -->
