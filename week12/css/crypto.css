@@ -17,8 +17,8 @@
   --clr-light: #fff;
   --clr-gray: #989898;
   --clr-dark: #444;
-  --clr-accent: #D06D6D;
-  --clr-accent-dark: #613131;
+  --clr-accent: #d0b16d;
+  --clr-accent-dark: #d3a119;
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -36,7 +36,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
-  background-image: url(../img/mars.jpg);
+  background-image: url(../img/cypto.jpg);
   background-size: cover;
   color: var(--clr-light);
   min-height: 100vh;
@@ -484,7 +484,7 @@ a:hover {
     grid-column: 1 / 3;
   }
 
-  /* https://stackoverflow.com/questions/34152419/elements-not-resizing-properly
+    /* https://stackoverflow.com/questions/34152419/elements-not-resizing-properly
 https://stackoverflow.com/questions/34094499/background-color-not-visible-when-set
 https://stackoverflow.com/questions/29420851/css-style-not-applying
 https://blog.professorbeekums.com/2021/aws-went-down-now-what/
@@ -528,4 +528,4 @@ https://gist.github.com/old-campos/3870308
 https://matkat99.github.io/wdd330-portfolio-example/week1/
 https://www.freecodecamp.org/news/the-css-handbook-a-handy-guide-to-css-for-developers-b56695917d11/ 
 https://www.w3.org/Style/CSS/Overview.en.html
-https://towardsdatascience.com/obtaining-historical-and-real-time-crypto-data-with-very-simple-web-programming-7b481f153630 */
+https://towardsdatascience.com/obtaining-historical-and-real-time-crypto-data-with-very-simple-web-programming-7b481f153630

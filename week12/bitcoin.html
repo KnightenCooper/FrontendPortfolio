@@ -6,106 +6,91 @@
     <title>WDD 330 portfolio</title>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/crypto.css">
     
 </head>
 <body>
    
    <main class="mars-current-weather">
-     <h1 class="main-title">Latest weather at Elysium Planitia</h1>
+     <h1 class="main-title">Current BitCoin & Ethereum Exchange Rates:</h1>
 
      <div class="date">
-       <h2 class="section-title section-title--date">
-         Sol 
-         <span data-current-sol>375</span>
-        </h2>
-       <p class="date__day" data-current-date></p>
+      <h2 class="section-title">Ethereum:</h2>
+      <p class="reading"  id='infoETH'> </p>
      </div>
 
      <div class="temp">
-       <h2 class="section-title">Temperature</h2>
-       <p class="reading">
-         High:
-         <span data-current-temp-high></span>
-         °<span data-temp-unit></span>
-        </p>
-       <p class="reading">
-         Low:
-         <span data-current-temp-low></span>
-         °<span data-temp-unit></span>
-        </p>
+       <h2 class="section-title">BitCoin:</h2>
+       <p class="reading"  id='info'> </p>
      </div>
 
      <div class="wind">
-       <h2 class="section-title">Wind</h2>
-       <p class="reading">
-         <span data-wind-speed></span>
-         <span data-speed-unit></span>
-        </p>
+       <h2 class="section-title">Update:</h2>
+       <p class="reading" id='infotime'></p>
 
-       <div class="wind__direction">
-         <p class="sr-only" data-wind-direction-text></p>
-
-         <!-- update --direction custom prop
-              to change arrow direction -->
-         <div class="wind__arrow" data-wind-direction-arrow></div>
-       </div>
      </div> 
 
      <div class="info">
-      <p>InSight is taking daily weather measurements (temperature, wind, pressure) on the surface of Mars at Elysium Planitia, a flat, smooth plain near Mars’ equator.</p>
-      <p>This is only a part of InSight’s mission. <a href="https://mars.nasa.gov/insight/mission/overview/">Click here</a> to go to NASA's website.</p>
-      <p>Part #2 of Knighten's project: <a href="/week12/bitcoin.html">Click here for information about Crypto Prices</a> </p>
+      <p>These are the current exchange rates for the two most popular cryptocurries: BitCoin and Ethereum.</p>
+      <p>USD stands for United States Dollar. ETH stands for Ethereum. BTC stands for BitCoin.</p>
+      <p>Part #1 of Knighten's project: <a href="/week12/index.html">Click here for information about Weather on Mars</a> </p>
      </div>
 
-     <div class="unit">
-       <label for="cel">°C</label>
-       <input type="radio" id="cel" name="unit" checked>
-       <!-- when unit__toggle is clicked
-            checkbox needs to change -->
-       <button class="unit__toggle" data-unit-toggle></button>
-       <label for="fah">°F</label>
-       <input type="radio" id="fah" name="unit">
-     </div> 
 
    </main>
 
-   <div class="previous-weather">
-     <!-- When clicked, toggle '.show-weather'
-     to .previous-weather div -->
-     <button for="weather-toggle" class="show-previous-weather"><span>&#8593;</span> <span class="sr-only">Show previous weather</span></button>
 
-     <h2 class="main-title previous-weather__title">Previous 7 days</h2> 
 
-     <div class="previous-days" data-previous-sols></div>
+
    </div>
 
-   <template data-previous-sol-template>
-      <div class="previous-day">
-        <h3 class="previous-day__sol">
-          Sol
-          <span data-sol></span>
-        </h3>
-        <p class="previous-day__date" data-date></p>
-        <p class="previous-day__temp">
-          High:
-          <span data-temp-high></span>
-          °<span data-temp-unit></span>
-        </p>
-        <p class="previous-day__temp">
-          Low:
-          <span data-temp-low></span>
-          °<span data-temp-unit></span>
-        </p>
-        <button class="previous-day__more-info" data-select-button>more info</button>
-      </div>
-   </template>
+
+ 
    <script src="js/index.js" defer></script>
 
+
+
+
+   <p id='info'></p>
+   <p id='infotime'></p>
+
+   <script>
+    const getBtcData = async () => {
+       fetch('https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        document.getElementById("info").innerHTML = '<b>1 BTC = ' + data.USD + ' USD</b>'
+      });
+    }
+    getBtcData();
+    tcount=setInterval(function(){
+      tcount++
+      if (tcount==10) {getBtcData(); tcount=0}
+      document.getElementById("infotime").innerHTML = 'Next update in ' + (10-tcount) + ' seconds'
+    },1000);
+    
+
+    const getEthData = async () => {
+       fetch('https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        document.getElementById("infoETH").innerHTML = '<b>1 ETH = ' + data.USD + ' USD</b>'
+      });
+    }
+    getEthData();
+    tcount=setInterval(function(){
+      tcount++
+      if (tcount==10) {getEthData(); tcount=0}
+      document.getElementById("infotimeETH").innerHTML = 'Next update in ' + (10-tcount) + ' seconds'
+    },1000);
+    </script>
 
 </body>
 </html>
  <!-- Code Sources:
+https://www.fusioncharts.com/blog/tutorial-creating-real-time-bitcoin-ticker-javascript/
 https://stackoverflow.com/questions/34152419/elements-not-resizing-properly
 https://stackoverflow.com/questions/34094499/background-color-not-visible-when-set
 https://stackoverflow.com/questions/29420851/css-style-not-applying
@@ -150,4 +135,5 @@ https://gist.github.com/old-campos/3870308
 https://matkat99.github.io/wdd330-portfolio-example/week1/
 https://www.freecodecamp.org/news/the-css-handbook-a-handy-guide-to-css-for-developers-b56695917d11/ 
 https://www.w3.org/Style/CSS/Overview.en.html
-https://towardsdatascience.com/obtaining-historical-and-real-time-crypto-data-with-very-simple-web-programming-7b481f153630-->
+https://towardsdatascience.com/obtaining-historical-and-real-time-crypto-data-with-very-simple-web-programming-7b481f153630
+-->
